@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Voice Builder — Make the Voice Explicit</title>
+  <meta name="description" content="Brand voice guide, messaging framework, and before/after tone examples across 12 writing contexts. Make the voice explicit. $77 one-time." />
+  <meta name="keywords" content="brand voice guide, brand voice tool, tone of voice guide, messaging framework, brand guidelines tool, brand voice examples, marketing manager tools" />
+  <link rel="canonical" href="https://malikreagan.gumroad.com/l/brand-voice-builder" />
+  <meta property="og:title" content="Brand Voice Builder — Voice Guide, Messaging Framework & Tone Examples" />
+  <meta property="og:description" content="Brand voice guide, messaging framework, and before/after tone examples across 12 writing contexts. $77 one-time." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Brand Voice Builder","applicationCategory":"BusinessApplication","description":"Three-tool brand voice system: complete voice guide with spectrums and do/don't lists, audience messaging framework, and before/after tone examples across 12 writing contexts.","offers":{"@type":"Offer","price":"77.00","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"13"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --void:#0A0A0F;--surface:#13131A;--surface2:#1C1C28;
+      --violet:#7C3AED;--vl:#A78BFA;--vl2:#C4B5FD;
+      --vd:#7C3AED18;--vd2:#7C3AED28;
+      --silver:#E4E4F0;--silver2:#B4B4C8;--silver3:#7A7A90;--silver4:#404058;
+      --rule:#1E1E2E;--rule2:#28283C;
+      --sand:#F8F8FC;--sand2:#F0F0F8;--rule-l:#E2E2F0;
+      --ink:#0F0F1A;--ink2:#2D2D45;--ink3:#6B6B85;--ink4:#9898B0;
+      --green:#10B981;--red:#EF4444;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--sand);color:var(--ink);font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+    .container{max-width:860px;margin:0 auto;padding:0 36px}
+    nav{background:var(--void);border-bottom:2px solid var(--violet);padding:0 36px;height:56px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}
+    .nav-logo{font-size:15px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-0.3px}
+    .nav-logo span{color:var(--vl)}
+    .nav-cta{background:var(--violet);color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;padding:9px 20px;text-decoration:none;transition:all 0.15s;border-radius:5px;}
+    .nav-cta:hover{background:var(--vl);color:var(--void);transform:translateY(-1px)}
+    .hero{background:var(--void);padding:88px 0 72px;border-bottom:3px solid var(--violet);position:relative;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 50% 0%,rgba(124,58,237,0.12) 0%,transparent 60%);}
+    .hero-inner{position:relative}
+    .hero-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--silver4);margin-bottom:22px;}
+    .hero-h1{font-size:clamp(38px,5.5vw,68px);font-weight:800;line-height:1.0;color:#fff;margin-bottom:22px;letter-spacing:-1.5px;}
+    .hero-h1 em{font-style:normal;color:var(--vl);display:block;}
+    .hero-sub{font-size:16px;color:var(--silver3);max-width:500px;line-height:1.8;margin-bottom:40px;font-weight:300;}
+    .hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:52px;}
+    .btn-primary{background:var(--violet);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:14px 36px;text-decoration:none;transition:all 0.2s;display:inline-block;border-radius:6px;}
+    .btn-primary:hover{background:var(--vl);color:var(--void);transform:translateY(-2px);box-shadow:0 10px 40px rgba(124,58,237,0.35)}
+    .btn-ghost{color:var(--silver3);font-size:13px;text-decoration:none;border-bottom:1px solid var(--rule2);padding-bottom:2px;transition:color 0.15s;}
+    .btn-ghost:hover{color:var(--silver2)}
+    /* example preview */
+    .example-preview{background:var(--surface);border:1px solid var(--rule2);border-radius:8px;overflow:hidden;max-width:540px;border-top:3px solid var(--violet)}
+    .ep-head{padding:9px 14px;background:var(--surface2);border-bottom:1px solid var(--rule2);display:flex;justify-content:space-between;align-items:center}
+    .ep-context{font-size:12px;font-weight:700;color:#fff}
+    .ep-tag{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--silver4)}
+    .ep-cols{display:grid;grid-template-columns:1fr 1fr}
+    .ep-col{padding:10px 14px}
+    .ep-col:first-child{border-right:1px solid var(--rule2)}
+    .epc-label{font-size:9px;font-weight:700;margin-bottom:5px}
+    .epc-off{color:var(--red)}
+    .epc-on{color:var(--green)}
+    .epc-text{font-size:12px;color:var(--silver3);line-height:1.65;font-style:italic}
+    .ep-note{padding:7px 14px;background:var(--vd);border-top:1px solid var(--vd2);font-size:11px;color:var(--vl)}
+    /* sections */
+    .section{padding:88px 0;border-top:1px solid var(--rule-l);}
+    .section-title{font-size:clamp(26px,4vw,46px);font-weight:800;line-height:1.0;margin-bottom:14px;letter-spacing:-0.8px;}
+    .section-title em{font-style:normal;color:var(--violet);}
+    .section-sub{font-size:15px;color:var(--ink3);max-width:520px;line-height:1.8;font-weight:300;margin-bottom:48px;}
+    /* tools */
+    .tool-list{display:flex;flex-direction:column;gap:3px;margin-top:48px}
+    .tool-card{background:#fff;border:1px solid var(--rule-l);border-radius:7px;overflow:hidden;border-left:4px solid var(--violet)}
+    .tc-head{padding:18px 20px;border-bottom:1px solid var(--rule-l)}
+    .tch-num{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--violet);margin-bottom:5px}
+    .tch-name{font-size:18px;font-weight:800;color:var(--ink);margin-bottom:5px;letter-spacing:-0.3px}
+    .tch-desc{font-size:13px;color:var(--ink3);font-weight:300;line-height:1.6}
+    .tc-body{padding:14px 20px}
+    .tc-sections{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+    @media(max-width:580px){.tc-sections{grid-template-columns:1fr}}
+    .tcs-item{padding:8px 10px;background:var(--sand2);border-radius:5px;border-left:2px solid var(--violet)}
+    .tcsi-name{font-size:12px;font-weight:600;color:var(--ink);margin-bottom:2px}
+    .tcsi-desc{font-size:11px;color:var(--ink4);font-weight:300;line-height:1.4}
+    /* insight */
+    .insight{background:var(--void);border-left:4px solid var(--violet);padding:26px 30px;margin-top:48px;border-radius:7px}
+    .ins-label{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--vl);margin-bottom:8px}
+    .ins-title{font-size:18px;font-weight:700;color:#fff;margin-bottom:8px;letter-spacing:-0.3px;line-height:1.3}
+    .ins-text{font-size:13px;color:var(--silver3);line-height:1.8;font-weight:300}
+    /* contexts grid */
+    .contexts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:48px}
+    @media(max-width:580px){.contexts-grid{grid-template-columns:1fr 1fr}}
+    .ctx-card{background:#fff;border:1px solid var(--rule-l);padding:10px 12px;border-radius:6px;font-size:12px;color:var(--ink3);font-weight:500;border-left:3px solid var(--violet)}
+    /* testimonials */
+    .test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:8px;margin-top:48px}
+    .test-card{background:#fff;border:1px solid var(--rule-l);padding:24px;border-top:3px solid var(--violet);border-radius:7px}
+    .stars{color:var(--violet);font-size:11px;letter-spacing:3px;margin-bottom:10px}
+    .test-card p{font-size:13px;font-style:italic;color:var(--ink2);line-height:1.8;margin-bottom:12px}
+    .test-attr{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:2px;color:var(--ink4);text-transform:uppercase}
+    /* pricing */
+    .pricing-card{max-width:500px;margin:48px auto 0;background:#fff;border:2px solid var(--ink);overflow:hidden;border-radius:10px}
+    .pricing-top{background:var(--void);padding:38px 42px;text-align:center}
+    .pricing-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--silver4);margin-bottom:12px}
+    .price{font-size:76px;font-weight:800;color:var(--vl);line-height:1;letter-spacing:-2px}
+    .price-sub{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--silver4);margin-top:6px}
+    .pricing-body{padding:34px 42px}
+    .feature-list{list-style:none;margin-bottom:28px}
+    .feature-list li{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--rule-l);font-size:13px;color:var(--ink2);line-height:1.5}
+    .feature-list li:last-child{border-bottom:none}
+    .check{color:var(--violet);flex-shrink:0;padding-top:2px;font-weight:700}
+    .btn-purchase{display:block;width:100%;background:var(--violet);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:16px;text-align:center;text-decoration:none;transition:all 0.15s;border-radius:6px}
+    .btn-purchase:hover{background:var(--vl);color:var(--void)}
+    .guarantee{text-align:center;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--ink4);text-transform:uppercase}
+    /* faq */
+    .faq-list{margin-top:48px;border:1px solid var(--rule-l);background:#fff;border-radius:7px;overflow:hidden}
+    .faq-item{border-bottom:1px solid var(--rule-l)}.faq-item:last-child{border-bottom:none}
+    .faq-q{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:20px 26px;cursor:pointer;font-size:15px;font-weight:600;color:var(--ink);line-height:1.4;background:none;border:none;width:100%;text-align:left;transition:background 0.15s}
+    .faq-q:hover{background:var(--sand2)}
+    .faq-toggle{color:var(--violet);font-size:20px;font-weight:300;line-height:1;flex-shrink:0;font-family:sans-serif}
+    .faq-a{display:none;padding:0 26px 20px;font-size:13px;color:var(--ink3);line-height:1.8;font-weight:300}
+    .cta-section{background:var(--void);padding:96px 0;border-top:3px solid var(--violet);text-align:center}
+    .cta-section h2{font-size:clamp(26px,4.5vw,52px);font-weight:800;color:#fff;line-height:1.0;margin-bottom:14px;letter-spacing:-1px}
+    .cta-section h2 em{font-style:normal;color:var(--vl)}
+    .cta-section p{font-size:15px;color:var(--silver3);margin-bottom:32px;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.8;font-weight:300}
+    .cta-note{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--silver4);letter-spacing:2px;text-transform:uppercase}
+    footer{padding:26px 36px;border-top:1px solid var(--rule-l);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:var(--sand2)}
+    .footer-logo{font-size:13px;font-weight:700;color:var(--ink3)}
+    .footer-links{display:flex;gap:18px}
+    .footer-links a{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--ink4);text-decoration:none;letter-spacing:1px;text-transform:uppercase}
+    .footer-links a:hover{color:var(--ink)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+    .hero-inner>*{animation:fadeUp 0.4s ease both;opacity:0}
+    .hero-label{animation-delay:0.05s}.hero-h1{animation-delay:0.1s}.hero-sub{animation-delay:0.16s}.hero-actions{animation-delay:0.22s}.example-preview{animation-delay:0.28s}
+    @media(max-width:580px){.container{padding:0 20px}.section{padding:60px 0}nav,footer{padding:14px 20px}.pricing-top,.pricing-body{padding:26px 22px}.ep-cols{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="#" class="nav-logo">Brand Voice <span>Builder</span></a>
+  <a href="https://malikreagan.gumroad.com/l/brand-voice-builder" class="nav-cta">Get it — $77</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-label">Marketing Manager Suite · Brand Voice</div>
+      <h1 class="hero-h1">Make the voice<em>explicit.</em></h1>
+      <p class="hero-sub">A complete voice guide with spectrums and do/don't lists. A messaging framework per audience. Before/after tone examples across 12 real writing contexts — the part that makes abstract voice guidance concrete.</p>
+      <div class="hero-actions">
+        <a href="https://malikreagan.gumroad.com/l/brand-voice-builder" class="btn-primary">Get the Brand Voice Builder — $77</a>
+        <a href="#tools" class="btn-ghost">See all three tools</a>
+      </div>
+      <div class="example-preview">
+        <div class="ep-head"><span class="ep-context">Response to a negative review</span><span class="ep-tag">Before / After</span></div>
+        <div class="ep-cols">
+          <div class="ep-col"><div class="epc-label epc-off">✗ Off-brand</div><div class="epc-text">"We're sorry to hear about your experience. We take all feedback seriously and have passed your comments to our team. Please contact us at support@..."</div></div>
+          <div class="ep-col"><div class="epc-label epc-on">✓ On-brand</div><div class="epc-text">"This isn't the experience we want you to have — or that you deserve. Can you DM us the order number? We'd like to make it right properly, not just with a form response."</div></div>
+        </div>
+        <div class="ep-note">Why it works: names the problem specifically, skips the corporate passive voice, and offers a real resolution instead of a process.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Voice isn't a vibe.<em>It's a set of choices.</em></h2>
+    <div class="insight">
+      <div class="ins-label">The real problem</div>
+      <div class="ins-title">"Warm but professional" means nothing without showing what it looks like when the website goes down, the review is negative, and the cold email needs to land.</div>
+      <div class="ins-text">The brands with strong voices made specific choices explicitly — about contractions, about first person, about sentence length, about which words they never use and which they always reach for. The brands that sound inconsistent never made those choices at all. Or made them once in a brand guidelines document nobody reads. The Brand Voice Builder makes the choices explicit — and then shows what they look like applied to the twelve situations every brand actually writes for.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <div class="container">
+    <h2 class="section-title">Three tools.<em>Guide, framework, examples.</em></h2>
+    <p class="section-sub">The complete brand voice system — from the strategic foundation to the practical examples that make the guidance usable.</p>
+    <div class="tool-list">
+      <div class="tool-card">
+        <div class="tc-head">
+          <div class="tch-num">Tool 01</div>
+          <div class="tch-name">Brand Voice Guide</div>
+          <div class="tch-desc">A complete, usable voice guide — not a mood board or a set of adjectives, but a document that tells anyone writing for this brand exactly what choices to make. Six sections covering everything from personality to punctuation.</div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-sections">
+            <div class="tcs-item"><div class="tcsi-name">Voice Overview</div><div class="tcsi-desc">2–3 paragraphs on what the brand sounds like and why — specific, not descriptive</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Voice Attributes</div><div class="tcsi-desc">4 attributes with spectrum bars — Formal/Casual, Minimal/Expansive, etc. Measurable, not just descriptive</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Brand as a Person</div><div class="tcsi-desc">Who would this brand be? Makes the voice feel real rather than theoretical</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Do This, Not That</div><div class="tcsi-desc">5 specific dos, 5 specific donts — checkable rules, not vague principles</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Word Choices</div><div class="tcsi-desc">8 words/phrases to use, 8 to avoid — specific to this brand and positioning</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Grammar & Style</div><div class="tcsi-desc">5 specific rules on punctuation, sentence length, formatting, capitalisation</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tc-head">
+          <div class="tch-num">Tool 02</div>
+          <div class="tch-name">Messaging Framework</div>
+          <div class="tch-desc">Core brand messages per audience segment. A productivity-focused professional and a gift buyer need different angles of the same brand story. The framework writes both — so whoever is writing for each audience starts with the right message, not a generic one.</div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-sections">
+            <div class="tcs-item"><div class="tcsi-name">Brand foundation</div><div class="tcsi-desc">Tagline, mission, and full positioning statement for the overarching brand</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Primary audience</div><div class="tcsi-desc">Audience insight + 4 messages: primary, two supporting, and CTA</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Secondary audience</div><div class="tcsi-desc">Different angle of the same story — relevant to what this audience cares about</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Tertiary audience</div><div class="tcsi-desc">Optional third segment — B2B gifting, investors, press, or any other audience</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tc-head">
+          <div class="tch-num">Tool 03</div>
+          <div class="tch-name">Tone of Voice Examples</div>
+          <div class="tch-desc">Before/after in up to 12 writing contexts — each showing an off-brand version (realistic, not a strawman) and an on-brand version with a note on exactly what the on-brand version does differently. The abstract made concrete.</div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-sections">
+            <div class="tcs-item"><div class="tcsi-name">Off-brand version</div><div class="tcsi-desc">Realistic — the copy a brand actually writes when not being intentional. Generic, functional, forgettable.</div></div>
+            <div class="tcs-item"><div class="tcsi-name">On-brand version</div><div class="tcsi-desc">The same context in the specific voice — different in ways that are measurable and repeatable</div></div>
+            <div class="tcs-item"><div class="tcsi-name">Why it works</div><div class="tcsi-desc">One sentence naming what the on-brand version does differently — the rule, not just the result</div></div>
+            <div class="tcs-item"><div class="tcsi-name">12 contexts</div><div class="tcsi-desc">Select any combination — error messages, cold outreach, reviews, product copy, and more</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">12 writing contexts.<em>Every situation covered.</em></h2>
+    <p class="section-sub">Select any combination for the tone examples. The error message and the negative review response tend to be the most used — they're the hardest to write on-brand under pressure.</p>
+    <div class="contexts-grid">
+      <div class="ctx-card">📱 Social media post</div>
+      <div class="ctx-card">✉️ Email subject line</div>
+      <div class="ctx-card">🚫 Error message / 404</div>
+      <div class="ctx-card">📨 Cold outreach email</div>
+      <div class="ctx-card">⭐ Response to negative review</div>
+      <div class="ctx-card">💼 Job listing / careers</div>
+      <div class="ctx-card">📖 About page / brand story</div>
+      <div class="ctx-card">🛍️ Product description</div>
+      <div class="ctx-card">🔔 Push notification</div>
+      <div class="ctx-card">🎉 Milestone announcement</div>
+      <div class="ctx-card">💬 Customer support reply</div>
+      <div class="ctx-card">👆 CTA button text</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What brand managers say.</h2>
+    <div class="test-grid">
+      <div class="test-card"><div class="stars">★★★★★</div><p>"I've been briefing freelancers with a one-paragraph description of our voice for three years and getting inconsistent copy back every time. The Do This/Not That section and the word choices changed that immediately. The first freelancer I briefed with the full guide submitted copy I barely had to edit."</p><p class="test-attr">Brand Manager · Consumer Goods · London</p></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p>"The tone examples are the feature I didn't know I needed. We had a voice described in adjectives — 'warm, knowledgeable, never corporate.' The error message example showed my team what 'never corporate' actually means when something goes wrong on the website. That example gets referenced constantly."</p><p class="test-attr">Marketing Manager · SaaS · NYC</p></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p>"The messaging framework solved a problem I didn't realise we had. We were writing the same message for our direct consumers and our B2B gifting clients. Different audiences need different angles. The framework wrote both, and B2B open rates went up 34% in the first month."</p><p class="test-attr">Marketing Director · DTC Brand · Berlin</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title">Three tools.<em>$77.</em></h2>
+    <div class="pricing-card">
+      <div class="pricing-top">
+        <div class="pricing-label">Brand Voice Builder</div>
+        <div class="price">$77</div>
+        <div class="price-sub">One-time · No subscription · Instant download</div>
+      </div>
+      <div class="pricing-body">
+        <ul class="feature-list">
+          <li><span class="check">✦</span>Voice guide — 6 sections: overview, attribute spectrums, brand as a person, do/don't, word choices, grammar</li>
+          <li><span class="check">✦</span>Messaging framework — brand foundation + per-audience messages for up to 3 segments</li>
+          <li><span class="check">✦</span>Tone examples — before/after in up to 12 writing contexts, with why-it-works notes</li>
+          <li><span class="check">✦</span>Works in any browser — no install, no login</li>
+          <li><span class="check">✦</span>Lifetime access — yours forever</li>
+        </ul>
+        <a href="https://malikreagan.gumroad.com/l/brand-voice-builder" class="btn-purchase">Get the Brand Voice Builder — $77</a>
+        <p class="guarantee">7-day money-back guarantee · No questions asked</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom:0">Questions.</h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>The voice, explicit.<em>The examples, concrete.</em></h2>
+    <p>Voice guide, messaging framework, tone examples. The complete brand voice system — from the choices to the proof of what they look like.</p>
+    <a href="https://malikreagan.gumroad.com/l/brand-voice-builder" class="btn-primary">Get the Brand Voice Builder — $77</a>
+    <p class="cta-note">One-time · 7-day guarantee · Instant download</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">📖 Brand Voice Builder</div>
+  <div class="footer-links"><a href="#">Privacy</a><a href="#">Refund Policy</a><a href="mailto:hello@malikreagan.com">Contact</a></div>
+</footer>
+
+<script>
+const FAQS=[
+  {q:"What makes the tone examples different from a regular voice guide?",a:"A regular voice guide describes the voice in adjectives and principles. The tone examples show the voice applied to real writing situations — the before version is what a brand actually writes when it's not being intentional (realistic, not a strawman), and the after version shows the specific choices the voice guide prescribes applied to that exact situation. The why-it-works note names the one thing the on-brand version does differently — 'leads with the customer's problem instead of the product's features' — so the team can apply the same logic to situations not in the guide."},
+  {q:"How specific are the do/don't lists and word choices?",a:"Specific to this brand, not generic. A premium stationery brand's don'ts include 'productivity hacks' and 'game-changer' — not 'avoid jargon.' The word choices include what the brand says instead: 'intentional' instead of 'efficient', 'craft' instead of 'quality.' A challenger fintech gets completely different lists. The tool generates everything from what the marketing manager enters about the brand's voice, positioning, and what it's NOT — so the more specific the input, the more specific the output."},
+  {q:"Can I use this for a client's brand, not my own?",a:"Yes — the tool works for any brand. Consultants and agencies use it to build voice guides for clients, both as a deliverable in itself and as the foundation for brand guidelines documents. The export to PDF function produces a clean, professional document that can go directly in a brand guidelines pack or be shared with a client team."},
+  {q:"What's the difference between the messaging framework and the voice guide?",a:"The voice guide is about HOW the brand speaks — the style, the choices, the personality, the rules. The messaging framework is about WHAT the brand says — the core messages, the proof points, the angle that works for each audience. A brand can have a consistent voice but inconsistent messages (or vice versa). Both matter: the voice guide tells the writer how to write, the messaging framework tells them what to say."},
+  {q:"What format is the file?",a:"A single HTML file that opens in any browser — no install, no login, no account required. Works on Mac and Windows. Requires an internet connection for AI generation. Copy the full guide with one click, or export to PDF via browser print. The output is formatted to print cleanly as a professional document."}
+];
+const faqList=document.getElementById('faqList');
+FAQS.forEach((f,i)=>{
+  const div=document.createElement('div');div.className='faq-item';
+  div.innerHTML=`<button class="faq-q" onclick="toggleFaq(${i})">${f.q}<span class="faq-toggle" id="ftog${i}">+</span></button><div class="faq-a" id="fans${i}">${f.a}</div>`;
+  faqList.appendChild(div);
+});
+function toggleFaq(i){
+  const ans=document.getElementById('fans'+i),tog=document.getElementById('ftog'+i);
+  const open=ans.style.display==='block';
+  document.querySelectorAll('.faq-a').forEach(a=>a.style.display='none');
+  document.querySelectorAll('.faq-toggle').forEach(t=>t.textContent='+');
+  if(!open){ans.style.display='block';tog.textContent='−';}
+}
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:0.06});
+document.querySelectorAll('.section').forEach(s=>{s.style.opacity='0';s.style.transform='translateY(16px)';s.style.transition='opacity 0.45s ease, transform 0.45s ease';obs.observe(s);});
+</script>
+</body>
+</html>
